@@ -1,29 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <Daton msg="I'm daton89" />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import Vue from "vue";
+import Daton from "./components/Daton.vue";
 
-@Component({
+export default Vue.extend({
+  data() {
+    return {
+      sliderValue: [50, 100]
+    };
+  },
   components: {
-    HelloWorld
+    Daton
   }
-})
-export default class App extends Vue {}
+});
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+
+html,
+body {
+  font-family: "Fira Code", monospace;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  background-size: 140vw 140vh;
+  background-color: #fff;
+  background-image: linear-gradient(225deg, #ff0000, #cc00cc, #1800dd);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
 }
 </style>
