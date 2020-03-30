@@ -3,10 +3,10 @@ version: "2" # specify docker-compose version
 # Define the services/containers to be run
 services:
   vue-portfolio: # name of the first service
+    image: registry.digitalocean.com/daton/vue-portfolio
     hostname: vue-portfolio
     restart: unless-stopped
     container_name: vue-portfolio
-    build: ./ # specify the directory of the Dockerfile
     labels:
       - traefik.backend=vue-portfolio
       - "traefik.frontend.rule=Host:daton.it,www.daton.it"
