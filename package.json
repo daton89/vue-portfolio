@@ -5,6 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "docker:build-image": "docker build . -t registry.digitalocean.com/daton/vue-portfolio",
+    "docker:push-image": "docker push registry.digitalocean.com/daton/vue-portfolio",
+    "docker:run-image": "docker run -d -p 8080:80 -n vue-portfolio registry.digitalocean.com/daton/vue-portfolio",
+    "docker:run-compose": "docker-compose up -d",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
