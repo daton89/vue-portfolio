@@ -1,19 +1,21 @@
 <template>
-  <div>
-    <img alt="daton avatar" class="avatar" src="../assets/my-avatar.svg" />
-    <h1 class="name">{{ msg }}</h1>
-    <a href="http://github.com/daton89" target="_blank" rel="noopener noreferrer">
-      <svg-icon class="social-icon" name="github" color="github" size="large" />
-    </a>
-    <a href="https://twitter.com/daton89" target="_blank" rel="noopener noreferrer">
-      <svg-icon class="social-icon" name="twitter" color="twitter" size="large" />
-    </a>
-    <a href="https://www.linkedin.com/in/tony-d-angelo-0b6b72a6/" target="_blank" rel="noopener noreferrer">
-      <svg-icon class="social-icon" name="linkedin" color="linkedin" size="large" />
-    </a>
-    <a href="https://www.xing.com/profile/Antonio_DAngelo9/cv" target="_blank" rel="noopener noreferrer">
-      <svg-icon class="social-icon" name="xing" color="xing" size="large" />
-    </a>
+  <div class="container">
+    <div class="daton-container">
+      <img alt="daton avatar" class="avatar" src="../assets/my-avatar-transparent.svg" />
+      <h1 class="name">{{ msg }}</h1>
+      <a href="http://github.com/daton89" target="_blank" rel="noopener noreferrer">
+        <svg-icon class="social-icon" name="github" color="github" size="large" />
+      </a>
+      <a href="https://twitter.com/daton89" target="_blank" rel="noopener noreferrer">
+        <svg-icon class="social-icon" name="twitter" color="twitter" size="large" />
+      </a>
+      <a href="https://www.linkedin.com/in/tony-d-angelo-0b6b72a6/" target="_blank" rel="noopener noreferrer">
+        <svg-icon class="social-icon" name="linkedin" color="linkedin" size="large" />
+      </a>
+      <a href="https://www.xing.com/profile/Antonio_DAngelo9/cv" target="_blank" rel="noopener noreferrer">
+        <svg-icon class="social-icon" name="xing" color="xing" size="large" />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -36,8 +38,18 @@ export default Vue.extend({
 </script>
 
 <style>
+.container {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.daton-container {
+  width: 320px;
+}
 .avatar {
   width: 320px;
+  text-align: center;
 }
 .name {
   color: white;
