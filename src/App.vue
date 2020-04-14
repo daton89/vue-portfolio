@@ -1,31 +1,39 @@
 <template>
   <div id="app">
-    <Daton msg="I'm daton89" />
+    <carousel perPage="1" navigationEnabled navigationNextLabel=">" navigationPrevLabel="<">
+      <slide>
+        <Daton msg="I'm daton89" />
+      </slide>
+      <slide>
+        <Bio />
+      </slide>
+    </carousel>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import Daton from "./components/Daton.vue";
+import Vue from 'vue'
+import { Carousel, Slide } from 'vue-carousel'
+import Bio from '@/components/Bio.vue'
+
+import Daton from './components/Daton.vue'
 
 export default Vue.extend({
-  data() {
-    return {
-      sliderValue: [50, 100]
-    };
-  },
   components: {
-    Daton
+    Carousel,
+    Slide,
+    Daton,
+    Bio
   }
-});
+})
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
 
 html,
 body {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -40,8 +48,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.slider {
 }
 </style>
