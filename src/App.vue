@@ -2,13 +2,17 @@
   <div id="app">
     <carousel :perPage="1" :autoplay="true" :autoplayTimeout="10000" :autoplayHoverPause="true">
       <slide>
-        <Daton msg="I'm daton89" />
+        <daton msg="I'm daton89" />
       </slide>
       <slide>
-        <Bio />
+        <bio />
       </slide>
       <slide>
-        <m-mongo />
+        <project
+          name="m-mongo"
+          description="A simple MongoDB migration CLI tool written in Typescript, dump and restore your dbs or collections."
+          url="https://github.com/daton89/m-mongo"
+        />
       </slide>
     </carousel>
   </div>
@@ -21,7 +25,7 @@ import Vue from 'vue'
 import { Carousel, Slide } from 'vue-carousel'
 import Daton from './components/Daton.vue'
 import Bio from '@/components/Bio.vue'
-import MMongo from '@/components/MMongo.vue'
+import Project from '@/components/Project.vue'
 
 export default Vue.extend({
   components: {
@@ -29,7 +33,7 @@ export default Vue.extend({
     Slide,
     Daton,
     Bio,
-    MMongo
+    Project
   }
 })
 </script>

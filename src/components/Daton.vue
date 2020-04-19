@@ -24,7 +24,7 @@ import Vue from 'vue'
 import SvgIcon from './SvgIcon.vue'
 
 export default Vue.extend({
-  name: 'Daton',
+  name: 'daton',
   props: {
     msg: {
       type: String,
