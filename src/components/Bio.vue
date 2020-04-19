@@ -3,7 +3,7 @@
     <p>I'm an Italian living in Munich, Germany</p>
     <p>Computer is my passion since I was 13 years old</p>
     <p>I developed my first website with plain html and css and a my first js lines around 2008</p>
-    <p>I work as professional web developer from 7 years</p>
+    <p>I work as professional web developer since 7 years</p>
     <p>Discover more in the next slide</p>
   </div>
 </template>
