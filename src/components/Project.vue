@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <h1>{{ name }}</h1>
-    <img class="img-responsive" src="../assets/images/m-mongo.gif" alt="m-mongo project" />
+    <img class="img-responsive" v-lazy="require(`@/assets/images/${img}`)" :alt="`project ${name}`" />
     <p class="description">
       {{ description }}
     </p>
@@ -19,6 +19,7 @@ export default Vue.extend({
   name: 'project',
   props: {
     name: { type: String },
+    img: { type: String },
     description: { type: String },
     url: { type: String }
   },
