@@ -10,8 +10,33 @@
       <slide>
         <project
           name="m-mongo"
-          description="A simple MongoDB migration CLI tool written in Typescript, dump and restore your dbs or collections."
+          img="m-mongo.gif"
+          description="A simple MongoDB migration CLI tool written in Typescript, dump and restore your dbs or collections"
           url="https://github.com/daton89/m-mongo"
+        />
+      </slide>
+      <slide>
+        <project
+          name="warehouse"
+          img="warehouse.gif"
+          description="A simple warehouse service built with MEAN stack with Angular 7 that works as desktop app thanks to Electron"
+          url="https://github.com/daton89/warehouse"
+        />
+      </slide>
+      <slide>
+        <project
+          name="mongoose-transactions"
+          img="mongoose-transactions.png"
+          description="A Node.js package to club many MongoDB queries into a group and execute all of them together as part of a transaction"
+          url="https://github.com/daton89-topperblues/mongoose-transactions"
+        />
+      </slide>
+      <slide>
+        <project
+          name="nodejs-cluter-socket.io"
+          img="nodejs-cluster-socket.io.png"
+          description="Leverage scaling Node.js application with Socket.io load balancing connections with Redis"
+          url="https://github.com/daton89/nodejs-cluster-socket.io"
         />
       </slide>
     </carousel>
