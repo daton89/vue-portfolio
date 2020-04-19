@@ -29,31 +29,31 @@ export default Vue.extend({
 <style>
 /* default */
 .icon {
-  width: 1.2em;
+  width: 32px;
   height: 1.2em;
   fill: currentColor;
 }
 
 /* sizes */
 .icon.is-large {
-  width: 2em;
-  height: 2em;
+  width: 64px;
+  height: 64px;
 }
 .icon.is-medium {
-  width: 1.6em;
-  height: 1.6em;
+  width: 48px;
+  height: 48px;
 }
 .icon.is-normal {
-  width: 1.2em;
-  height: 1.2em;
+  width: 32px;
+  height: 32px;
 }
 .icon.is-small {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
 }
 .icon.is-tiny {
-  width: 0.8em;
-  height: 0.8em;
+  width: 16px;
+  height: 16px;
 }
 
 /* colors */
