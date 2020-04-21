@@ -44,3 +44,7 @@ html {
   height: auto;
   max-width: 480px;
 }
+
+.img-responsive[lazy='loading'] {
+  max-height: 64px;
+}
