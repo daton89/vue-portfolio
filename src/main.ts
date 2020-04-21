@@ -6,7 +6,9 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
-Vue.use(VueLazyload)
+Vue.use(VueLazyload, {
+  loading: require('./assets/images/spinner.svg')
+})
 
 new Vue({
   render: h => h(App)
